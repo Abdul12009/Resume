@@ -1,0 +1,28 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Website</title>
+</head>
+<body>
+    <h1>AI Content Generator</h1>
+    <form action="/generate" method="post">
+        <textarea name="script" rows="4" cols="50" placeholder="Enter your script"></textarea>
+        <br>
+        <input type="submit" value="Generate">
+    </form>
+</body>
+</html>
+<!-- result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Content</title>
+</head>
+<body>
+    <h2>Generated Text:</h2>
+    <p>{{ generated_text }}</p>
+    <h2>Generated Image:</h2>
+    <img src="/static/generated_image.png" alt="Generated Image">
+</body>
+</html> 
